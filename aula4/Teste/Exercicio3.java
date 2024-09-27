@@ -30,8 +30,9 @@ public class Exercicio3 {
         
 
         // 3
-        String name, gender, maritalStatus;
+        String name;
         int age, salary;
+        char gender, maritalStatus;
         do {
             System.out.println("Name: ");
             name = input.nextLine();
@@ -53,19 +54,22 @@ public class Exercicio3 {
         input.nextLine();
         do {
             System.out.println("Gender: ");
-            gender = input.next().toLowerCase();
-            if (gender.equals("f") && gender.equals("m")) {
+            gender = input.next().toLowerCase().charAt(0);
+            char female = 'f', male = 'm';
+            if (gender == female || gender == male) {
                 break;
             }
-            else System.out.println("Invalid gender");
+            else System.out.println("Invalid gender");;
         } while (true);
         // Ignore lower
         do {
             System.out.println("Marital Status: ");
-            maritalStatus = input.next();
-            System.out.println(maritalStatus);
-            if (!maritalStatus.equals('s') || !maritalStatus.equals('c') || !maritalStatus.equals('v') || !maritalStatus.equals('d')) System.out.println("Invalid marital status");
-            else break;
+            maritalStatus = input.next().toLowerCase().charAt(0);
+            char single = 's', civil = 'c', married = 'v', divorced = 'd';
+            if (maritalStatus == single || maritalStatus == civil || maritalStatus == married || maritalStatus == divorced) {
+                break;
+            }
+            else System.out.println("Invalid marital status");
         } while (true);
         System.out.println(name + "\n" + 
                             age + "\n" +

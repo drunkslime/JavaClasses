@@ -1,5 +1,6 @@
+package aula4;
 
-public class main {
+public class Atividade1 {
         public static void main(String[] args) { // This is the main
         String [] convidados = {"Ana", "Olivia", "Óscar", "Maria", "Francisco", "Pedro", "Miguel"};
         System.out.println("Os convidados da festa são: ");

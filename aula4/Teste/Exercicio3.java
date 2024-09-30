@@ -52,6 +52,12 @@ public class Exercicio3 {
             else break;
         } while (true);
         input.nextLine();
+
+
+        // Apperently, Java likes it more like this, comparing variable to variable
+        // Additionally, it prefers comparing "if equal" (==) rather than "if not equal" (!=)
+        
+        
         do {
             System.out.println("Gender: ");
             gender = input.next().toLowerCase().charAt(0);

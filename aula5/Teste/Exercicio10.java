@@ -1,8 +1,8 @@
-package aula5;
-
+package aula5.Teste;
 import java.util.Scanner;
 
-public class Exercicio11 {
+public class Exercicio10 {
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter starting point: ");
@@ -13,7 +13,7 @@ public class Exercicio11 {
         for (int i = startingNumber; i < endingNumber; i++) {
             System.out.println(i);
         }
-        System.out.println("Sum of the starting/ending numbers: " + (startingNumber + endingNumber));
         input.close();
     }
+
 }

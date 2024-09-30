@@ -1,4 +1,4 @@
-package aula5;
+package aula5.Teste;
 
 public class Exercicio6 {
     static public void main(String[] args) {

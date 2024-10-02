@@ -2,7 +2,7 @@ package aula5;
 
 import java.util.Arrays;
 
-public class Atividade2 {
+public class Atividade18 {
     public static void main(String[] args) {
         // Create empty zero-length array
         int [] numbers = new int[0];

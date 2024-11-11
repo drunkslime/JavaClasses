@@ -2,14 +2,9 @@ package aula14.Exercicio39;
 
 public class Car extends Vehicle{
 
-    private double price;
-
     public Car(String brand, String model, String color, int weight, int max_velocity, double price) {
-        super(brand, model, color, weight, max_velocity);
-        this.price = price;
+        super(brand, model, color, weight, max_velocity, price);
     }
-
-    public double getPrice() { return price; }
     
     public void turnOn() {
         setRunning(true);
@@ -37,4 +32,7 @@ public class Car extends Vehicle{
         }
     }
 
+    public double CalculateHirePrice(int days) {
+        return days * getPrice();
+    }
 }

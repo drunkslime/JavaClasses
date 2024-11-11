@@ -7,14 +7,16 @@ public abstract class Vehicle {
     private String color;
     private int weight;
     private int max_velocity;
+    private double price;
     private boolean running;
 
-    public Vehicle(String brand, String model, String color, int weight, int max_velocity) {
+    public Vehicle(String brand, String model, String color, int weight, int max_velocity, double price) {
         this.brand = brand;
         this.model = model;
         this.color = color;
         this.weight = weight;
         this.max_velocity = max_velocity;
+        this.price = price;
         this.running = false;
     }
 
@@ -23,7 +25,9 @@ public abstract class Vehicle {
     public String getColor() { return color; }
     public int getWeight() { return weight; }
     public int getMax_velocity() { return max_velocity; }
+    public double getPrice() { return price; }
     public boolean isRunning() { return running; }
+
 
     public void setBrand(String brand) { this.brand = brand; }
     public void setModel(String model) { this.model = model; }
@@ -36,4 +40,5 @@ public abstract class Vehicle {
     public abstract void Acelerate();
     public abstract void Stop();
     public abstract void turnOff();
+    public abstract double CalculateHirePrice(int days);
 }

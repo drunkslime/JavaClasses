@@ -1,15 +1,10 @@
 package aula14.Exercicio39;
 
 public class Motorcycle extends Vehicle{
-    
-    private double price;
 
     public Motorcycle(String brand, String model, String color, int weight, int max_velocity, double price) {
-        super(brand, model, color, weight, max_velocity);
-        this.price = price;
+        super(brand, model, color, weight, max_velocity, price);
     }
-
-    public double getPrice() { return price; }
     
     public void turnOn() {
         setRunning(true);
@@ -36,5 +31,8 @@ public class Motorcycle extends Vehicle{
             System.out.println(String.format("%s is turned off now", getBrand()));
         }
     }
-    
+
+    public double CalculateHirePrice(int days) {
+        return days * getPrice();
+    }
 }
